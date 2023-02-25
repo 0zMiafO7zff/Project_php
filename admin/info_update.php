@@ -40,13 +40,13 @@
 
     if($result){
         echo "<script> type='text/javascript'>";
-        echo "alert('แก้ไขข้อมูลสำเร็จ');";
-        echo "window.location = 'worker.php';";
+        echo "alert('แก้ไขข้อมูลส่วนตัวสำเร็จ');";
+        echo "window.location = 'info.php';";
         echo "</script>";
     }else{
         echo "<script> type='text/javascript'>";
         echo "alert('แก้ไขข้อมูลผิดพลาด !!');";
-        echo "window.location = 'worker.php';";
+        echo "window.location = 'info.php';";
         echo "</script>";
     }
 ?>

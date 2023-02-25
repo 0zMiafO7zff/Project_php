@@ -17,7 +17,7 @@
     $u_lastname = $_POST['u_lastname'];
     $tel = $_POST['tel'];
     $email = $_POST['email'];
-    $id = $_POST['id'];
+    $user_id = $_POST['user_id'];
     // UPDATE DATA
 
     $sql = "UPDATE tbl_login SET
@@ -26,7 +26,7 @@
     tel = '$tel' ,
     email = '$email'
 
-    WHERE user_id = $id
+    WHERE user_id = $user_id
 
     ";
 
@@ -41,12 +41,12 @@
     if($result){
         echo "<script> type='text/javascript'>";
         echo "alert('แก้ไขข้อมูลสำเร็จ');";
-        echo "window.location = 'worker.php';";
+        echo "window.location = 'employee.php';";
         echo "</script>";
     }else{
         echo "<script> type='text/javascript'>";
         echo "alert('แก้ไขข้อมูลผิดพลาด !!');";
-        echo "window.location = 'worker.php';";
+        echo "window.location = 'employee.php';";
         echo "</script>";
     }
 ?>

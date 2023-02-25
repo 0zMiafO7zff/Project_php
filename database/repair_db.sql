@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 24, 2023 at 06:32 PM
+-- Generation Time: Feb 25, 2023 at 10:01 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.29
 
@@ -79,14 +79,14 @@ CREATE TABLE `tbl_login` (
 --
 
 INSERT INTO `tbl_login` (`user_id`, `username`, `password`, `user_status`, `user_level`, `u_name`, `u_lastname`, `tel`, `email`) VALUES
-(1, 'admin', 'admin', 0, 'admin', 'admin', 'admin', '0111111111', 'admin@gmail.com'),
-(2, 'worker1', 'worker1', 0, 'worker', 'Jone', 'De pank', '0321580556', 'jone@gmail.com'),
-(3, 'worker2', 'worker2', 0, 'worker', 'Nowadays', 'Now', '0222222222', 'now@GMAIL.COM'),
-(4, 'employee1', 'employee1', 0, 'employee', 'June', 'De Jong', '0321654789', 'june@gmail.com'),
-(5, 'employee2', 'employee2', 0, 'employee', 'na', 'De pank', '0258794613', 'thana@gamil.com'),
-(6, 'worker3', 'worker3', 0, 'worker', 'กิตติพันธ์', 'จงเจียรวัฒนกุล', '0615943986', 'kitijongjien@gmail.com'),
+(1, 'admin', 'admin', 0, 'admin', 'adminmind', 'adminmon', '033333333', 'admin123@gmail.com'),
+(2, 'worker1', 'worker1', 0, 'worker', 'Jane', 'De pank', '0321580556', 'jone@gmail.com'),
+(3, 'worker2', 'worker2', 0, 'worker', 'eiei', 'Now', '0222222222', 'now@GMAIL.COM'),
+(4, 'employee1', 'employee1', 0, 'employee', 'June', 'Der Jong', '0321654789', 'june@gmail.com'),
+(5, 'employee2', 'employee2', 0, 'employee', 'thana', 'thana', '0258794613', 'thana@gamil.com'),
+(6, 'worker3', 'worker3', 0, 'worker', 'เฮโหลเวิล', 'จงเจียรวัฒนกุล', '0615943986', 'kitijongjien@gmail.com'),
 (32, 'emp99', 'emp99', 0, 'employee', 'kiki', 'kkkkk', '1231241', '01111@gmail.com'),
-(34, 'kittipan_admin', '01234', 0, 'admin', 'กิตติพันธ์', 'จงเจียรวัฒนกุล', '0615943986', 'kittipan.mtz.062@gmail.com');
+(34, 'kittipan_admin', '01234', 0, 'admin', 'EIEI', 'JOJO', '0601233986', 'kittipan.mtz.062@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -108,7 +108,7 @@ INSERT INTO `tbl_status` (`status_id`, `status_name`) VALUES
 (2, 'กำลังนำเนินการ'),
 (3, 'กำลังซ่อม'),
 (4, 'ซ่อมเสร็จแล้ว'),
-(7, 'รอดำเนินการ');
+(7, 'รอดำเนินกาล');
 
 --
 -- Indexes for dumped tables

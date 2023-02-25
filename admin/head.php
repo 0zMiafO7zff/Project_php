@@ -7,6 +7,8 @@ echo '
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css">';
 //เช็คว่ามีตัวแปร session อะไรบ้าง
 
+
+
 // print_r($_SESSION);
 
 //สร้างเงื่อนไขตรวจสอบสิทธิ์การเข้าใช้งานจาก session

@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-</head>
-<body>
+<?php $menu = "info";?>
+<?php include("head.php"); ?> 
+
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+  <!-- Navbar -->
+  <?php include("navbar.php"); ?> 
+  <!-- /.navbar -->
+  <?php include("menu.php"); ?> 
+
 
     <?php
 
@@ -21,29 +25,35 @@
         // print_r($row);
     ?>
 
-    <br><br><br><br><br><br><br><br>
-    <form action="worker_update.php" method="post">
 
-    <table width="700" border="0" align="center" cellpadding="0" cellspacing="0">
+    <br><br><br>
+    <form action="employee_update.php" method="post">
+
+    
+    <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+
     <tr>
-      <td height="40" colspan="2" align="center" bgcolor="#D6D5D6"><h1>ฟอร์มแก้ไขข้อมูล พนักงาน</h1></td>
+      <td height="70" colspan="2" align="center" bgcolor="#D6D5D6"><h3 class="modal-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        แก้ไขข้อมูล จัดการข้อมูลพนักงาน | USERNAME : <?php echo $row['username'];?></h3></td>
     </tr>
     <tr>
       <td align="right" bgcolor="#EBEBEB">&nbsp;</td>
       <td bgcolor="#EBEBEB">&nbsp;</td>
     </tr>
     <tr>
-      <td align="right" bgcolor="#EBEBEB">ID : </td>
+      <td align="right" bgcolor="#EBEBEB"class="text-secondary">ID : </td>
       <td bgcolor="#EBEBEB">
-      &nbsp;&nbsp;<input type="text" name="id" value="<?php echo $row['user_id'];?>" readonly>
+      &nbsp;&nbsp;<input type="text" name="user_id" value="<?php echo $row['user_id'];?>" readonly>
       </td>
     </tr>
     <tr>
       <td align="right" bgcolor="#EBEBEB">&nbsp;</td>
       <td bgcolor="#EBEBEB">&nbsp;</td>
     </tr>
+  
     <tr>
-      <td width="117" align="right" bgcolor="#EBEBEB">ชื่อ 
+      <td width="50%" align="right" bgcolor="#EBEBEB">ชื่อ 
         :</td>
       <td width="583" bgcolor="#EBEBEB">&nbsp;&nbsp;<input name="u_name" type="text" id="u_name" value="<?php echo $row['u_name'];?>" required ></td>
     </tr>
@@ -78,7 +88,7 @@
       <td bgcolor="#EBEBEB">&nbsp;</td>
     </tr>
     <tr>
-      <td align="right" bgcolor="#EBEBEB">ระดับ
+      <td align="right" bgcolor="#EBEBEB" class="text-secondary">ระดับ
         <label> : </label></td>
       <td bgcolor="#EBEBEB">&nbsp;&nbsp;<input name="user_level" type="text" id="user_level" value="<?php echo $row['user_level'];?>" required readonly></td>
     </tr>
@@ -89,31 +99,16 @@
     <tr>
       <td bgcolor="#EBEBEB">&nbsp;</td>
       <td bgcolor="#EBEBEB">&nbsp;
-        <input type="button" value=" ยกเลิก " onclick="window.location='employee.php' " /> <!-- ถ้าไม่แก้ไขให้กลับไปหน้าแสดงรายการ -->
+        <input type="button" value=" ยกเลิก "  class="bg-danger" onclick="window.location='employee.php' " /> 
         &nbsp;
         
-        <button type="submit">ยืนยันการแก้ไขข้อมูล</button>
+        <button type="submit" class="bg-success">ยืนยันการแก้ไขข้อมูล</button>
     </tr>
     <tr>
       <td bgcolor="#EBEBEB">&nbsp;</td>
       <td bgcolor="#EBEBEB">&nbsp;</td>
     </tr>
   </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </form>
 </body>
 </html>

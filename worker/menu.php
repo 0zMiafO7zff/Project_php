@@ -46,7 +46,7 @@ session_start();
             </a>
           </li> 
           <li class="nav-item">
-            <a href="#" class="nav-link <?php if($menu=="#"){echo "active";} ?> ">
+            <a href="../admin/info.php" class="nav-link <?php if($menu=="info"){echo "active";} ?> ">
               <i class="nav-icon fas fa-edit"></i>
               <p>ข้อมูลส่วนตัว</p>
             </a>

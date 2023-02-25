@@ -37,12 +37,12 @@
     if($result){
         echo "<script> type='text/javascript'>";
         echo "alert('แก้ไขข้อมูลสำเร็จ');";
-        echo "window.location = 'worker.php';";
+        echo "window.location = 'status.php';";
         echo "</script>";
     }else{
         echo "<script> type='text/javascript'>";
         echo "alert('แก้ไขข้อมูลผิดพลาด !!');";
-        echo "window.location = 'worker.php';";
+        echo "window.location = 'status.php';";
         echo "</script>";
     }
 ?>
